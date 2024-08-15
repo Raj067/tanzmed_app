@@ -1,7 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:tanzmed/helpers/settings.dart';
+import 'package:tanzmed/pages/ctc_centers.dart';
+import 'package:tanzmed/pages/risk_assessment.dart';
 
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
@@ -72,7 +75,9 @@ class Homepage extends StatelessWidget {
                     Colors.white,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const RiskAssessment());
+                },
                 child: const Text("Risk Assessment"),
               ),
             ),
@@ -88,7 +93,9 @@ class Homepage extends StatelessWidget {
                     Colors.white,
                   ),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Get.to(const CTCCenters());
+                },
                 child: const Text("CTC Centers"),
               ),
             ),
