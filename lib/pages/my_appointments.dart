@@ -39,7 +39,7 @@ class _MyAppointmentPageState extends State<MyAppointmentPage> {
           icon: const Icon(Icons.arrow_back),
         ),
         title: const Text(
-          "myAppointments",
+          "Miadi zangu",
         ),
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(0.0),
@@ -69,9 +69,9 @@ class _MyAppointmentPageState extends State<MyAppointmentPage> {
                       labelPadding: EdgeInsets.all(0),
                       dividerHeight: 0,
                       tabs: [
-                        Tab(text: "upcoming"),
-                        Tab(text: "pastAppointment"),
-                        Tab(text: "cancelled"),
+                        Tab(text: "Zinazokuja"),
+                        Tab(text: "Zilizopita"),
+                        Tab(text: "Zilizositishwa"),
                       ],
                     ),
                     Expanded(

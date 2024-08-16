@@ -43,7 +43,7 @@ class DoctorModel {
       data.add(DoctorSchedule.fromJson(schedule));
     }
 
-    for (var appoitntment in json["appointments"]) {
+    for (var appoitntment in json["Miadi"]) {
       data1.add(PastAppointment.fromJson(appoitntment));
     }
 

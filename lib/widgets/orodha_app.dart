@@ -30,7 +30,7 @@ List<OrodhaSelectionApps> orodhaSelectedApps(BuildContext context) => [
       OrodhaSelectionApps(
         isSelected: false,
         id: 2,
-        name: "hospitali",
+        name: "Hospitali",
         color: const Color(0xffedfeff),
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
@@ -53,7 +53,7 @@ List<OrodhaSelectionApps> orodhaSelectedApps(BuildContext context) => [
       OrodhaSelectionApps(
         isSelected: false,
         id: 3,
-        name: "zahanati",
+        name: "Zahanati",
         color: const Color(0xfff7ebf9),
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
@@ -73,7 +73,7 @@ List<OrodhaSelectionApps> orodhaSelectedApps(BuildContext context) => [
       OrodhaSelectionApps(
         isSelected: false,
         id: 4,
-        name: "vituoVyaAfya",
+        name: "Vituo Vya Afya",
         color: const Color(0xfffff8ed),
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
@@ -93,7 +93,7 @@ List<OrodhaSelectionApps> orodhaSelectedApps(BuildContext context) => [
       OrodhaSelectionApps(
         isSelected: false,
         id: 5,
-        name: "maduka",
+        name: "Maduka",
         color: const Color(0xffeef9eb),
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
@@ -133,7 +133,7 @@ List<OrodhaSelectionApps> orodhaSelectedApps(BuildContext context) => [
       OrodhaSelectionApps(
         isSelected: false,
         id: 6,
-        name: "klinikiMaalumu",
+        name: "Kliniki Maalumu",
         color: const Color(0xfffff1ee),
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
@@ -153,7 +153,7 @@ List<OrodhaSelectionApps> orodhaSelectedApps(BuildContext context) => [
       OrodhaSelectionApps(
         isSelected: false,
         id: 13,
-        name: "tibaPopote",
+        name: "Tiba Popote",
         color: Color.fromARGB(255, 235, 249, 242),
         icon: Padding(
           padding: const EdgeInsets.all(7.0),

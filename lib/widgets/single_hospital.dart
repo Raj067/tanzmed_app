@@ -212,9 +212,9 @@ class _SingleHospitalState extends State<SingleHospital> {
                       ),
                       onPressed: () {
                         Get.to(Appointments(
-                          appBar: AppBar(
-                            title: Text(widget.title),
-                          ),
+                          // appBar: AppBar(
+                          //   title: Text(widget.title),
+                          // ),
                           isHidden: true,
                           isCategory: false,
                           hospitalId: orodha.id,
@@ -411,7 +411,7 @@ PreferredSizeWidget appBarMethod(BuildContext context) {
     //   ),
     // ),
     title: const Text(
-      "appointments",
+      "Miadi",
       style: TextStyle(
         color: Colors.black,
       ),

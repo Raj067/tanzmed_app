@@ -6,6 +6,7 @@ import 'package:tanzmed/helpers/settings.dart';
 import 'package:tanzmed/pages/ctc_centers.dart';
 import 'package:tanzmed/pages/risk_assessment.dart';
 
+import 'appointment.dart';
 import 'my_appointments.dart';
 
 class Homepage extends StatelessWidget {
@@ -53,8 +54,13 @@ class Homepage extends StatelessWidget {
                       Colors.white,
                     ),
                   ),
-                  onPressed: () {},
-                  child: const Text("CTC Centers"),
+                  onPressed: () {
+                    Get.to(Appointments(
+                      isCategory: false,
+                      isHidden: false,
+                    ));
+                  },
+                  child: const Text("Doctors"),
                 ),
               ),
             ],

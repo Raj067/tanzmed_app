@@ -97,7 +97,7 @@ class _AppointCategoryState extends State<AppointmentCategory> {
                     .filterDoctorsSpecialities(widget.id,
                         hospitalId: widget.hospitalId)
                     .isEmpty
-                ? Center(child: Text("noDoctorFound"))
+                ? Center(child: Text("Hakuna Daktari yoyote"))
                 : ListView.builder(
                     shrinkWrap: true,
                     // physics: const NeverScrollableScrollPhysics(),

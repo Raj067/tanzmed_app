@@ -90,7 +90,7 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "ctcTitle",
+          "Vituo vya CTC",
           style: const TextStyle(color: Colors.white),
           overflow: TextOverflow.ellipsis,
           maxLines: 1,
@@ -152,7 +152,7 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                         ),
                         const SizedBox(width: 16),
                         Text(
-                          "findOrodha",
+                          "Tafuta",
                           style: const TextStyle(
                             color: Color(0xffE1E8ED),
                           ),
@@ -240,7 +240,7 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "nearestHealthFacility",
+                    "Vilivyopendekezwa",
                     style: const TextStyle(
                       fontSize: 20,
                     ),

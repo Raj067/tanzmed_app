@@ -135,11 +135,11 @@ class ListViewBuilder extends StatelessWidget {
                                     onTap: () {
                                       // go to appointment page
                                       Get.to(Appointments(
-                                        appBar: AppBar(
-                                          title: const Text(
-                                            "bookAppointment",
-                                          ),
-                                        ),
+                                        // appBar: AppBar(
+                                        //   title: const Text(
+                                        //     "bookAppointment",
+                                        //   ),
+                                        // ),
                                         isHidden: true,
                                         isCategory: false,
                                         hospitalId: orodha.id,
@@ -153,7 +153,7 @@ class ListViewBuilder extends StatelessWidget {
                                         borderRadius: BorderRadius.circular(10),
                                       ),
                                       child: const Text(
-                                        "bookNow",
+                                        "Weka miadi",
                                         style: TextStyle(
                                           fontSize: 12,
                                           color: Colors.white,

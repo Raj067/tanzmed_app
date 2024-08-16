@@ -256,7 +256,7 @@ class _RescheduleAppointmentState extends State<RescheduleAppointment> {
                       }
                     },
                     child: Text(
-                      "reschedule",
+                      "Badili",
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),

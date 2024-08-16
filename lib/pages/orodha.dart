@@ -152,7 +152,7 @@ class _OrodhaPageState extends State<OrodhaPage> {
                         ),
                         SizedBox(width: 16),
                         Text(
-                          "findOrodha",
+                          "Tafuta",
                           style: TextStyle(
                             color: Colors.grey,
                           ),
@@ -241,7 +241,7 @@ class _OrodhaPageState extends State<OrodhaPage> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    "nearestHealthFacility",
+                    "Vilivyopendekezwa",
                     style: TextStyle(
                       fontSize: 20,
                     ),

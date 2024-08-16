@@ -29,7 +29,7 @@ class _LeaveProductReviewState extends State<LeaveProductReview> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "leaveReview",
+          "Acha maoni",
           style: TextStyle(
             color: Colors.white,
           ),

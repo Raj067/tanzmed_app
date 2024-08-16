@@ -99,7 +99,7 @@ class _HospitaliCategoryState extends State<HospitaliCategory> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   const Text(
-                    "nearestHealthFacility",
+                    "Vilivyopendekezwa",
                     style: TextStyle(
                       fontSize: 20,
                     ),

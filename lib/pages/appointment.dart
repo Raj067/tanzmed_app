@@ -13,12 +13,10 @@ import '../widgets/location_widget.dart';
 class Appointments extends StatefulWidget {
   const Appointments({
     super.key,
-    required this.appBar,
     required this.isHidden,
     required this.isCategory,
     this.hospitalId,
   });
-  final PreferredSizeWidget? appBar;
   final bool isHidden;
   final bool isCategory;
   final String? hospitalId;
@@ -43,7 +41,9 @@ class _AppointmentsState extends State<Appointments> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: widget.appBar,
+      appBar: AppBar(
+        title: Text("Miadi"),
+      ),
       body: ListView(
         children: [
           const SizedBox(height: 10),
@@ -84,7 +84,7 @@ class _AppointmentsState extends State<Appointments> {
                       ),
                       SizedBox(width: 16),
                       Text(
-                        "findDoctor",
+                        "Tafuta Daktari",
                         style: TextStyle(
                           color: Color(0xffE1E8ED),
                         ),
@@ -102,7 +102,7 @@ class _AppointmentsState extends State<Appointments> {
               : const Padding(
                   padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
                   child: Text(
-                    "popularSpecialist",
+                    "Utaalamu",
                     style: TextStyle(
                       fontSize: 20,
                     ),
@@ -179,7 +179,7 @@ class _AppointmentsState extends State<Appointments> {
           const Padding(
             padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
             child: Text(
-              "featureRecommendedHospital",
+              "Wataalamu Wanaokufaa",
               style: TextStyle(
                 fontSize: 20,
               ),

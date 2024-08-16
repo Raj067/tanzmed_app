@@ -62,7 +62,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 1,
         value: false,
-        name: "general",
+        name: "Kawaida",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -81,7 +81,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 2,
         value: false,
-        name: "pediatrics",
+        name: "Watoto",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -122,7 +122,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 5,
         value: false,
-        name: "mentalHealth",
+        name: "Afya ya Akili",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -160,7 +160,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 6,
         value: false,
-        name: "cardiology",
+        name: "Moyo",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -179,7 +179,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 7,
         value: false,
-        name: "dermatology",
+        name: "Ngozi",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -198,7 +198,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 8,
         value: false,
-        name: "eNT",
+        name: "ENT",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -255,7 +255,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 11,
         value: false,
-        name: "internalMedicine",
+        name: "Magonjwa ya ndani",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -274,7 +274,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 12,
         value: false,
-        name: "orthopedics",
+        name: "Mifupa",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -312,7 +312,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 14,
         value: false,
-        name: "gastroenterology",
+        name: "Tumbo",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -369,7 +369,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 17,
         value: false,
-        name: "physiotherapy",
+        name: "Viungo",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -388,7 +388,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 18,
         value: false,
-        name: "hivaidss",
+        name: "VVU/Ukimwis",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -407,7 +407,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 25,
         value: false,
-        name: "nursing",
+        name: "Wauguzi",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(
@@ -426,7 +426,7 @@ List<SpecialistsApps> specialitiesHomeApps(BuildContext context) => [
       SpecialistsApps(
         id: 26,
         value: false,
-        name: "tibaYaUfahamu",
+        name: "Tiba ya Ufahamu",
         icon: Padding(
           padding: const EdgeInsets.all(7.0),
           child: Container(

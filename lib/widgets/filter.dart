@@ -101,7 +101,7 @@ class _FilterPageState extends State<FilterPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "filters",
+          "Chuja",
           style: const TextStyle(color: Colors.white),
         ),
         leading: IconButton(
@@ -208,7 +208,7 @@ class _FilterPageState extends State<FilterPage> {
 //                   padding:
 //                       const EdgeInsets.only(bottom: 0.0, left: 10, top: 10.0),
 //                   child: Text(
-//                     '${AppLocalizations.of(context)!.price} ${AppLocalizations.of(context)!.from}: ${AppLocalizations.of(context)!.dolarSign}${0 + 1 * 10 * int.parse(AppLocalizations.of(context)!.dollarToTsh)}  ${AppLocalizations.of(context)!.to}: ${AppLocalizations.of(context)!.dolarSign}${customValue * 10 * int.parse(AppLocalizations.of(context)!.dollarToTsh)}',
+//                     '${AppLocalizations.of(context)!.price} ${AppLocalizations.of(context)!.from}: ${AppLocalizations.of(context)!.dolarSign}${0 + 1 * 10 * int.parse(AppLocalizations.of(context)!.2500)}  ${AppLocalizations.of(context)!.to}: ${AppLocalizations.of(context)!.dolarSign}${customValue * 10 * int.parse(AppLocalizations.of(context)!.2500)}',
 //                     style: const TextStyle(
 //                       fontSize: 16,
 //                     ),
@@ -238,7 +238,7 @@ class _FilterPageState extends State<FilterPage> {
 //                               activeColor: primaryColor,
 //                               inactiveColor: primaryColor.withOpacity(0.2),
 
-//                               // label:AppLocalizations.of(context)!.setPriceValue,
+//                               // label:AppLocalizations.of(context)!.Weka gharama,
 
 //                               onChanged: (double newValue) {
 //                                 setState(() {
@@ -369,7 +369,7 @@ class _FilterPageState extends State<FilterPage> {
 //                   padding:
 //                       const EdgeInsets.only(bottom: 8.0, left: 10, top: 10.0),
 //                   child: Text(
-//                     AppLocalizations.of(context)!.facilityType,
+//                     AppLocalizations.of(context)!.Aina,
 //                     style: const TextStyle(
 //                       fontSize: 16,
 //                     ),

@@ -173,10 +173,10 @@ class GridViewBuilder extends StatelessWidget {
                                           onTap: () {
                                             // go to appointment page
                                             Get.to(Appointments(
-                                              appBar: AppBar(
-                                                title:
-                                                    Text(orodha.hospitalName),
-                                              ),
+                                              // appBar: AppBar(
+                                              //   title:
+                                              //       Text(orodha.hospitalName),
+                                              // ),
                                               isHidden: true,
                                               isCategory: false,
                                               hospitalId: orodha.id,
@@ -191,7 +191,7 @@ class GridViewBuilder extends StatelessWidget {
                                                   BorderRadius.circular(10),
                                             ),
                                             child: const Text(
-                                              "bookNow",
+                                              "Weka miadi",
                                               style: TextStyle(
                                                 fontSize: 12,
                                                 color: Colors.white,

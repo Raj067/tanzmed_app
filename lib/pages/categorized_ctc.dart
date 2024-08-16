@@ -104,7 +104,7 @@ class _CTCCategoryState extends State<CTCCategory> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "nearestHealthFacility",
+                    "Vilivyopendekezwa",
                     style: const TextStyle(
                       fontSize: 20,
                     ),
@@ -314,7 +314,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                                     borderRadius: BorderRadius.circular(10),
   //                                   ),
   //                                   child: Text(
-  //                                     "bookNow",
+  //                                     "Weka miadi",
   //                                     style: const TextStyle(
   //                                       fontSize: 12,
   //                                       color: Colors.white,
@@ -553,7 +553,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                                               BorderRadius.circular(10),
   //                                         ),
   //                                         child: Text(
-  //                                           "bookNow",
+  //                                           "Weka miadi",
   //                                           style: const TextStyle(
   //                                             fontSize: 12,
   //                                             color: Colors.white,

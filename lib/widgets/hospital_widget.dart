@@ -33,7 +33,7 @@ class _HospitalWidgetState extends State<HospitalWidget> {
           : doctorController
                   .getAllDoctors(hospitalId: widget.hospitalId)
                   .isEmpty
-              ? Center(child: Text("noDoctorFound"))
+              ? Center(child: Text("Hakuna Daktari yoyote"))
               : ListView.builder(
                   shrinkWrap: true,
                   physics: const NeverScrollableScrollPhysics(),

@@ -144,10 +144,10 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                               ),
                               child: Text(
                                 widget.status == 0
-                                    ? "upcoming"
+                                    ? "Zinazokuja"
                                     : widget.status == 1
-                                        ? "completed"
-                                        : "cancelled",
+                                        ? "Zilizopita"
+                                        : "Zilizositishwa",
                                 style: TextStyle(
                                   color: widget.status == 2
                                       ? Colors.red
@@ -260,12 +260,12 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                                     )
                                   : Text(
                                       widget.appointmentData.isCompleted == 0
-                                          ? "notConfirmed"
+                                          ? "Haijathibitishwa"
                                           : widget.appointmentData
                                                       .isCompleted ==
                                                   1
-                                              ? "confirmed"
-                                              : "cancelled",
+                                              ? "Imethibitishwa"
+                                              : "Zilizositishwa",
                                       overflow: TextOverflow.ellipsis,
                                       style: const TextStyle(
                                         fontSize: 12,
@@ -273,7 +273,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                                     )
                               : customStatus == 1
                                   ? const Text(
-                                      "confirmed",
+                                      "Imethibitishwa",
                                       overflow: TextOverflow.ellipsis,
                                       style: TextStyle(
                                         fontSize: 12,
@@ -281,7 +281,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                                     )
                                   : customStatus == 2
                                       ? const Text(
-                                          "cancelled",
+                                          "Zilizositishwa",
                                           overflow: TextOverflow.ellipsis,
                                           style: TextStyle(
                                             fontSize: 11,
@@ -358,7 +358,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                           border: Border.all(color: AppSettings.primaryColor),
                         ),
                         child: Text(
-                          customStatus == 0 ? "reschedule" : "leaveReview",
+                          customStatus == 0 ? "Badili" : "Acha maoni",
                           style: const TextStyle(
                             color: Colors.white,
                           ),
@@ -468,7 +468,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                           border: Border.all(color: AppSettings.primaryColor),
                         ),
                         child: Text(
-                          customStatus == 0 ? "cancel" : "bookAgain",
+                          customStatus == 0 ? "cancel" : "Book tena",
                           style: const TextStyle(
                             color: AppSettings.primaryColor,
                           ),
