@@ -271,7 +271,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                           const Text(
                             'speciality :',
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Color(0xffE1E8ED),
                             ),
                           ),
                           const SizedBox(width: 5),
@@ -317,7 +317,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                           const Text(
                             "experience",
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Color(0xffE1E8ED),
                               fontSize: 15,
                             ),
                             overflow: TextOverflow.visible,
@@ -354,7 +354,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                           const Text(
                             "rating",
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Color(0xffE1E8ED),
                               fontSize: 16,
                             ),
                             overflow: TextOverflow.visible,
@@ -387,7 +387,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                 ),
                 Text(
                   doctor.about.toString(),
-                  style: const TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Color(0xffE1E8ED)),
                   // maxLines: 2,
                   // overflow: TextOverflow.ellipsis,
                 ),
@@ -416,7 +416,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                 ),
                 const SizedBox(height: 20),
                 Container(
-                  color: Colors.grey.withAlpha(100),
+                  color: Color(0xffE1E8ED).withAlpha(100),
                   height: 125,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -434,7 +434,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                           : DatePicker(
                               DateTime.now(),
                               height: 100,
-                              deactivatedColor: Colors.grey.shade400,
+                              deactivatedColor: Color(0xffE1E8ED),
                               daysCount: numberOfDays,
                               activeDates: getNextTwoWeeks(widget
                                       .doctor!.doctorSchedule
@@ -767,7 +767,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
             padding: const EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
-              border: Border.all(color: Colors.grey),
+              border: Border.all(color: Color(0xffE1E8ED)),
             ),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -797,7 +797,7 @@ class _PsychologistPageState extends State<PsychologistPage> {
                         Text(
                           description,
                           style: const TextStyle(
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                           ),
                           overflow: TextOverflow.ellipsis,
                           maxLines: 2,

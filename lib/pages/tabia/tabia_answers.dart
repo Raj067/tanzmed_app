@@ -135,7 +135,7 @@ class _TabiaAnswersPageState extends State<TabiaAnswersPage> {
             gaugeValue: widget.totalContribution,
           ),
           const SizedBox(height: 10),
-          const Divider(color: Colors.grey),
+          const Divider(color: Color(0xffE1E8ED)),
           Center(
             child: Text(
               getText(widget.totalContribution),

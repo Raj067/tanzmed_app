@@ -153,7 +153,7 @@ class _FilterPageState extends State<FilterPage> {
 //               borderRadius: const BorderRadius.all(
 //                 Radius.circular(10),
 //               ),
-//               color: Colors.grey.withAlpha(100), //.withAlpha(50),
+//               color: Color(0xffE1E8ED).withAlpha(100), //.withAlpha(50),
 //             ),
 //             child: ListView(
 //               scrollDirection: Axis.horizontal,
@@ -177,7 +177,7 @@ class _FilterPageState extends State<FilterPage> {
 //                                 Container(
 //                                   width: 25.0,
 //                                   height: 2.0,
-//                                   color: Colors.grey,
+//                                   color: Color(0xffE1E8ED),
 //                                 ),
 //                             ],
 //                           ),
@@ -418,7 +418,7 @@ class _FilterPageState extends State<FilterPage> {
 //                               ),
 //                               color: selectedFacilities.contains(
 //                                       orodhaSelectedApps(context)[index].id)
-//                                   ? Colors.grey.withOpacity(0.3)
+//                                   ? Color(0xffE1E8ED).withOpacity(0.3)
 //                                   : orodhaSelectedApps(context)[index]
 //                                       .color, //.withAlpha(50),
 //                             ),

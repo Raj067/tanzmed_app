@@ -101,7 +101,10 @@ class _SingleHospitalWidgetState extends State<SingleHospitalWidget> {
                               : widget.doctor.langProficiency == 0
                                   ? 'Kisw'
                                   : 'Kisw | Eng',
-                      style: TextStyle(fontSize: 12, color: Colors.grey[500]),
+                      style: TextStyle(
+                        fontSize: 12,
+                        color: Color(0xffE1E8ED),
+                      ),
                     ),
                   ],
                 )
@@ -171,7 +174,7 @@ class _SingleHospitalWidgetState extends State<SingleHospitalWidget> {
                       getSpecialityName(),
                       overflow: TextOverflow.ellipsis,
                       style: const TextStyle(
-                        color: Colors.grey,
+                        color: Color(0xffE1E8ED),
                         fontSize: 12,
                       ),
                     ),
@@ -193,7 +196,7 @@ class _SingleHospitalWidgetState extends State<SingleHospitalWidget> {
                               : '',
                           style: const TextStyle(
                             fontSize: 12,
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                           ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -243,7 +246,7 @@ class _SingleHospitalWidgetState extends State<SingleHospitalWidget> {
                           widget.doctor.hospital.hospitalName ?? '',
                           style: const TextStyle(
                             fontSize: 12,
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                           ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -320,7 +323,7 @@ class _SingleHospitalWidgetState extends State<SingleHospitalWidget> {
               title,
               style: const TextStyle(
                 fontSize: 12,
-                color: Colors.grey,
+                color: Color(0xffE1E8ED),
               ),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,

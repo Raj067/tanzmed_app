@@ -1,24 +1,27 @@
 import 'package:bootstrap_icons/bootstrap_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:geocoding/geocoding.dart';
+import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
 import 'package:tanzmed/helpers/settings.dart';
 
 import '../controllers/orodha_controller.dart';
 import '../widgets/custom_loading.dart';
+import '../widgets/custom_location_widget.dart';
 import '../widgets/grid_view_builder.dart';
 import '../widgets/list_view_builder.dart';
 import '../widgets/orodha_app.dart';
-import 'categorized_ctc.dart';
+import 'category_hospitali.dart';
 
-class JifunzeZaidi extends StatefulWidget {
-  const JifunzeZaidi({super.key});
+class OrodhaPage extends StatefulWidget {
+  const OrodhaPage({super.key});
 
   @override
-  State<JifunzeZaidi> createState() => _JifunzeZaidiState();
+  State<OrodhaPage> createState() => _OrodhaPageState();
 }
 
-class _JifunzeZaidiState extends State<JifunzeZaidi> {
+class _OrodhaPageState extends State<OrodhaPage> {
   bool _isGridView = false;
 
   // final OrodhaCategoryController _orodhaCategoryController =
@@ -32,16 +35,16 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
   bool showLeftButton = false;
   @override
   void initState() {
-    orodhaController.isInitialCTCLoading.value = true;
+    orodhaController.isInitialLoading.value = true;
     // _orodhaCategoryController;
     // _orodhaController;
-    orodhaController.allCTC.clear();
-    // if (ctcController.allOrodha.isEmpty) {
-    //   ctcController.fetchOrodhaData(1);
+    orodhaController.allOrodha.clear();
+    // if (orodhaController.allOrodha.isEmpty) {
+    //   orodhaController.fetchOrodhaData(1);
     // }
 
-    // fetchLocation(context);
-    orodhaController.fetchCTCData(page);
+    fetchLocation(context);
+    orodhaController.fetchOrodhaData(page);
     scrollController.addListener(_scrollListener);
 
     // Listen for scroll events and update the flag
@@ -54,46 +57,44 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
   }
 
   // String? _currentAddress;
-  // Position? _currentPosition;
+  Position? _currentPosition;
 
-  // Future<void> _getAddressFromLatLng(Position position) async {
-  //   await placemarkFromCoordinates(
-  //           _currentPosition!.latitude, _currentPosition!.longitude)
-  //       .then((List<Placemark> placemarks) {
-  //     Placemark place = placemarks[0];
-  //     setState(() {
-  //       _currentAddress = '${place.street}, ${place.subLocality}';
-  //     });
-  //   }).catchError((e) {
-  //     print('this is the error: $e');
-  //   });
-  // }
+  Future<void> _getAddressFromLatLng(Position position) async {
+    await placemarkFromCoordinates(
+            _currentPosition!.latitude, _currentPosition!.longitude)
+        .then((List<Placemark> placemarks) {
+      // // Placemark place = placemarks[0];
+      // setState(() {
+      //   // String _currentAddress = '${place.street}, ${place.subLocality}';
+      // });
+    }).catchError((e) {
+      print('this is the error: $e');
+    });
+  }
 
-  // fetchLocation(context) async {
-  //   final hasPermission =
-  //       await GetCustomLocation.handleLocationPermission(context);
-  //   // Position position = await Geolocator.getCurrentPosition(
-  //   //     desiredAccuracy: LocationAccuracy.high);
-  //   // final hasPermission = await _handleLocationPermission();
-  //   if (!hasPermission) return;
-  //   await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.low)
-  //       .then((Position position) {
-  //     setState(() => _currentPosition = position);
-  //     _getAddressFromLatLng(_currentPosition!);
-  //   }).catchError((e) {
-  //     debugPrint(e);
-  //   });
-  // }
+  fetchLocation(context) async {
+    final hasPermission =
+        await GetCustomLocation.handleLocationPermission(context);
+    // Position position = await Geolocator.getCurrentPosition(
+    //     desiredAccuracy: LocationAccuracy.high);
+    // final hasPermission = await _handleLocationPermission();
+    if (!hasPermission) return;
+    await Geolocator.getCurrentPosition(desiredAccuracy: LocationAccuracy.high)
+        .then((Position position) {
+      setState(() => _currentPosition = position);
+      _getAddressFromLatLng(_currentPosition!);
+    }).catchError((e) {
+      debugPrint(e);
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          "ctcTitle",
-          style: const TextStyle(color: Colors.white),
-          overflow: TextOverflow.ellipsis,
-          maxLines: 1,
+        title: const Text(
+          "orodha",
+          style: TextStyle(color: Colors.white),
         ),
         backgroundColor: AppSettings.primaryColor,
         systemOverlayStyle: const SystemUiOverlayStyle(
@@ -104,24 +105,23 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
         iconTheme: const IconThemeData(
           color: Colors.white,
         ),
-        // actions: [
-        //   GestureDetector(
-        //     onTap: () =>
-        //         Get.to(const FilterPage(isSpecialist: true, isOrodha: true)),
-        //     child: Container(
-        //       margin: const EdgeInsets.all(8),
-        //       height: 25,
-        //       width: 25,
-        //       decoration: const BoxDecoration(
-        //         image: DecorationImage(
-        //           image: AssetImage(
-        //             'assets/icon/filter.png',
-        //           ),
-        //         ),
-        //       ),
-        //     ),
-        //   )
-        // ],
+        actions: [
+          GestureDetector(
+            onTap: () => {},
+            child: Container(
+              margin: const EdgeInsets.all(8),
+              height: 25,
+              width: 25,
+              decoration: const BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(
+                    'assets/icon/filter.png',
+                  ),
+                ),
+              ),
+            ),
+          )
+        ],
       ),
       body: SingleChildScrollView(
         controller: scrollController,
@@ -141,8 +141,8 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                   ),
                   elevation: 0,
                   color: Color(0xffE1E8ED).withAlpha(100),
-                  child: Padding(
-                    padding: const EdgeInsets.fromLTRB(10, 6, 10, 6),
+                  child: const Padding(
+                    padding: EdgeInsets.fromLTRB(10, 6, 10, 6),
                     child: Row(
                       children: [
                         Icon(
@@ -150,11 +150,11 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                           size: 24,
                           color: AppSettings.primaryColor,
                         ),
-                        const SizedBox(width: 16),
+                        SizedBox(width: 16),
                         Text(
                           "findOrodha",
-                          style: const TextStyle(
-                            color: Color(0xffE1E8ED),
+                          style: TextStyle(
+                            color: Colors.grey,
                           ),
                         ),
                       ],
@@ -163,12 +163,12 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                 ),
               ),
             ),
-            SizedBox(height: 10),
-            Padding(
-              padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
+            const SizedBox(height: 10),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
               child: Text(
                 "categories",
-                style: const TextStyle(
+                style: TextStyle(
                   fontSize: 20,
                 ),
               ),
@@ -188,9 +188,9 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                     padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: GestureDetector(
                       onTap: () {
-                        orodhaController.categorizedCTC.clear();
+                        orodhaController.categorizedOrodha.clear();
                         Get.to(
-                          CTCCategory(
+                          HospitaliCategory(
                             id: orodhaSelectedApps(context)[index].id,
                             title: orodhaSelectedApps(context)[index].name,
                           ),
@@ -213,6 +213,7 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                             ),
                             Text(
                               orodhaSelectedApps(context)[index].name,
+                              textAlign: TextAlign.center,
                               style: const TextStyle(
                                 color: AppSettings.primaryColor,
                                 fontSize: 12,
@@ -239,9 +240,9 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "nearestHealthFacility",
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontSize: 20,
                     ),
                   ),
@@ -270,12 +271,12 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
                   if (orodhaController.isLoading.value == false)
                     _isGridView
                         ? ListViewBuilder(
-                            allData: orodhaController.allCTC,
+                            allData: orodhaController.allOrodha,
                           )
                         : GridViewBuilder(
-                            allData: orodhaController.allCTC,
+                            allData: orodhaController.allOrodha,
                           ),
-                  if (orodhaController.isInitialCTCLoading.value)
+                  if (orodhaController.isInitialLoading.value == true)
                     const Center(
                       child: CustomLoadingDialog(),
                     ),
@@ -300,10 +301,10 @@ class _JifunzeZaidiState extends State<JifunzeZaidi> {
         !orodhaController.isLoading.value) {
       setState(() {
         isLoadingMore = true;
-        orodhaController.isInitialCTCLoading.value = false;
+        orodhaController.isInitialLoading.value = false;
       });
       page = page + 1;
-      await orodhaController.fetchCTCData(page);
+      await orodhaController.fetchOrodhaData(page);
       setState(() {
         isLoadingMore = false;
       });

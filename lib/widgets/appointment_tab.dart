@@ -70,7 +70,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
       padding: const EdgeInsets.all(10),
       margin: const EdgeInsets.only(top: 5, bottom: 5, left: 10, right: 10),
       decoration: BoxDecoration(
-        color: Colors.grey.withAlpha(100),
+        color: Color(0xffE1E8ED).withAlpha(100),
         borderRadius: BorderRadius.circular(10),
       ),
       child: Column(
@@ -108,7 +108,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                         const SizedBox(
                           height: 16,
                           child: VerticalDivider(
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                           ),
                         ),
                         Expanded(
@@ -122,7 +122,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                     Text(
                       getSpecialityName(),
                       style: const TextStyle(
-                        color: Colors.grey,
+                        color: Color(0xffE1E8ED),
                       ),
                     ),
                     Padding(
@@ -213,7 +213,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                         const SizedBox(
                           height: 16,
                           child: VerticalDivider(
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                           ),
                         ),
                         Text(
@@ -300,7 +300,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
           widget.status == 2
               ? Container()
               : Divider(
-                  color: Colors.grey.withOpacity(0.5),
+                  color: Color(0xffE1E8ED).withOpacity(0.5),
                   thickness: 0.5,
                 ),
           widget.status == 2
@@ -395,7 +395,7 @@ class _SingleAppointmentWidgetState extends State<SingleAppointmentWidget> {
                                                   WidgetStatePropertyAll(0),
                                               backgroundColor:
                                                   WidgetStatePropertyAll(
-                                                Colors.grey,
+                                                Color(0xffE1E8ED),
                                               ),
                                               foregroundColor:
                                                   WidgetStatePropertyAll(

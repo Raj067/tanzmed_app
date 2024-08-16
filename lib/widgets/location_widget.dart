@@ -55,7 +55,7 @@ class _UserLocationState extends State<UserLocation> {
         if (snapshot.connectionState == ConnectionState.waiting) {
           return const Text(
             'Loading...',
-            style: TextStyle(color: Colors.grey),
+            style: TextStyle(color: Color(0xffE1E8ED)),
           );
         } else if (snapshot.hasError) {
           return const Text(
@@ -65,7 +65,7 @@ class _UserLocationState extends State<UserLocation> {
         } else if (!snapshot.hasData || snapshot.data!.isEmpty) {
           return const Text(
             'Position not available',
-            style: TextStyle(color: Colors.grey),
+            style: TextStyle(color: Color(0xffE1E8ED)),
           );
         } else {
           Placemark firstPlacemark = snapshot.data![0];

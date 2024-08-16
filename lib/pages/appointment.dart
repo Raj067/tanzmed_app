@@ -72,7 +72,7 @@ class _AppointmentsState extends State<Appointments> {
                   borderRadius: BorderRadius.circular(20),
                 ),
                 elevation: 0,
-                color: Colors.grey.withAlpha(100),
+                color: Color(0xffE1E8ED).withAlpha(100),
                 child: const Padding(
                   padding: EdgeInsets.fromLTRB(10, 6, 10, 6),
                   child: Row(
@@ -86,7 +86,7 @@ class _AppointmentsState extends State<Appointments> {
                       Text(
                         "findDoctor",
                         style: TextStyle(
-                          color: Colors.grey,
+                          color: Color(0xffE1E8ED),
                         ),
                       ),
                     ],

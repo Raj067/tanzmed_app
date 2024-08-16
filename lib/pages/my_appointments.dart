@@ -45,10 +45,10 @@ class _MyAppointmentPageState extends State<MyAppointmentPage> {
           preferredSize: const Size.fromHeight(0.0),
           child: Container(
             decoration: BoxDecoration(
-              color: Colors.grey.withOpacity(0.1),
+              color: Color(0xffE1E8ED).withOpacity(0.1),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.1),
+                  color: Color(0xffE1E8ED).withOpacity(0.1),
                   blurStyle: BlurStyle.solid,
                 )
               ],

@@ -110,7 +110,7 @@ class _TimeWidgetState extends State<TimeWidget> {
                         color: widget.isSelectedTime != null &&
                                 widget.isSelectedTime!.hour == timeLabel.hour
                             ? AppSettings.primaryColor
-                            : Colors.grey.withOpacity(
+                            : Color(0xffE1E8ED).withOpacity(
                                 available.contains(timeLabel.hour) &&
                                         !isTodayTimePassed
                                     ? 0.9

@@ -309,7 +309,7 @@ class _SingleHospitalState extends State<SingleHospital> {
                         return const Text(
                           "loading",
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                             fontSize: 12,
                           ),
                         );
@@ -317,7 +317,7 @@ class _SingleHospitalState extends State<SingleHospital> {
                         return const Text(
                           "noAddress",
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: Color(0xffE1E8ED),
                             fontSize: 12,
                           ),
                         );
@@ -333,7 +333,7 @@ class _SingleHospitalState extends State<SingleHospital> {
                               child: Text(
                                 '${snapshot.data}',
                                 style: TextStyle(
-                                  color: Colors.grey[300],
+                                  color: Color(0xffE1E8ED),
                                   fontSize: 12,
                                 ),
                                 maxLines: 1,
@@ -425,9 +425,12 @@ PreferredSizeWidget appBarMethod(BuildContext context) {
           height: 20,
           width: 20,
           decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage(
-                      'assets/icon/miadi-appointment-main-topright.png'))),
+            image: DecorationImage(
+              image: AssetImage(
+                'assets/icon/miadi-appointment-main-topright.png',
+              ),
+            ),
+          ),
         ),
       ),
       IconButton(
@@ -438,8 +441,12 @@ PreferredSizeWidget appBarMethod(BuildContext context) {
           height: 20,
           width: 20,
           decoration: const BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/icon/filter_blue.png'))),
+            image: DecorationImage(
+              image: AssetImage(
+                'assets/icon/filter_blue.png',
+              ),
+            ),
+          ),
         ),
       ),
     ],

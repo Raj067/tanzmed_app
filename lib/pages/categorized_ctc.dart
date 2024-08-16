@@ -192,7 +192,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //             return const Text(
   //               '-',
   //               style: TextStyle(
-  //                 color: Colors.grey,
+  //                 color: Color(0xffE1E8ED),
   //                 fontSize: 12,
   //               ),
   //             );
@@ -200,7 +200,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //             return Text(
   //               '${snapshot.data}',
   //               style: const TextStyle(
-  //                 color: Colors.grey,
+  //                 color: Color(0xffE1E8ED),
   //                 fontSize: 12,
   //               ),
   //               maxLines: 1,
@@ -271,7 +271,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                             children: [
   //                               const Icon(
   //                                 BootstrapIcons.geo_alt,
-  //                                 color: Colors.grey,
+  //                                 color: Color(0xffE1E8ED),
   //                                 size: 12,
   //                               ),
   //                               const SizedBox(width: 5),
@@ -293,7 +293,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                               Text(
   //                                 orodha.rate.toString(),
   //                                 style: const TextStyle(
-  //                                   color: Colors.grey,
+  //                                   color: Color(0xffE1E8ED),
   //                                   fontSize: 12,
   //                                 ),
   //                               ),
@@ -366,7 +366,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //             //   return const Text(
   //             //     'Loading...',
   //             //     style: TextStyle(
-  //             //       color: Colors.grey,
+  //             //       color: Color(0xffE1E8ED),
   //             //       fontSize: 12,
   //             //     ),
   //             //   );
@@ -375,7 +375,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //               return const Text(
   //                 '-',
   //                 style: TextStyle(
-  //                   color: Colors.grey,
+  //                   color: Color(0xffE1E8ED),
   //                   fontSize: 12,
   //                 ),
   //               );
@@ -383,7 +383,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //               return Text(
   //                 '${snapshot.data}',
   //                 style: const TextStyle(
-  //                   color: Colors.grey,
+  //                   color: Color(0xffE1E8ED),
   //                   fontSize: 12,
   //                 ),
   //                 maxLines: 1,
@@ -420,7 +420,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                         Radius.circular(10),
   //                       ),
   //                       border: Border.all(
-  //                         color: Colors.grey.withOpacity(0.5),
+  //                         color: Color(0xffE1E8ED).withOpacity(0.5),
   //                         width: 0.5,
   //                       ),
   //                       // color: primaryColor,
@@ -475,7 +475,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                                 children: [
   //                                   const Icon(
   //                                     BootstrapIcons.geo_alt,
-  //                                     color: Colors.grey,
+  //                                     color: Color(0xffE1E8ED),
   //                                     size: 12,
   //                                   ),
   //                                   const SizedBox(width: 5),
@@ -497,7 +497,7 @@ class _CTCCategoryState extends State<CTCCategory> {
   //                                   Text(
   //                                     orodha.rate.toString(),
   //                                     style: const TextStyle(
-  //                                       color: Colors.grey,
+  //                                       color: Color(0xffE1E8ED),
   //                                       fontSize: 12,
   //                                     ),
   //                                   ),

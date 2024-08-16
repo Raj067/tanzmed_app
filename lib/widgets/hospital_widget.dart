@@ -45,7 +45,7 @@ class _HospitalWidgetState extends State<HospitalWidget> {
                         hospitalId: widget.hospitalId)[index];
                     Color? backgroundColor = index % 2 == 0
                         ? Colors.white
-                        : Colors.grey.withAlpha(100);
+                        : Color(0xffE1E8ED).withAlpha(100);
                     return Container(
                       color: backgroundColor,
                       child: SingleHospitalWidget(doctor: doctor),

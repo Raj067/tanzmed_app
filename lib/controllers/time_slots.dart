@@ -70,7 +70,7 @@ class _TimeSlotListState extends State<TimeSlotList> {
                   borderRadius: BorderRadius.circular(10),
                   color: timeSlotController.isSlotSelected[index]
                       ? AppSettings.primaryColor
-                      : Colors.grey.withOpacity(
+                      : Color(0xffE1E8ED).withOpacity(
                           timeSlotController.isavailable(
                                   index, newInitialTime, newEndTime)
                               ? 0.8

@@ -134,7 +134,7 @@ class _RescheduleAppointmentState extends State<RescheduleAppointment> {
                   height: 20,
                 ),
                 Container(
-                  color: Colors.grey.withAlpha(100),
+                  color: Color(0xffE1E8ED).withAlpha(100),
                   height: 125,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -142,7 +142,7 @@ class _RescheduleAppointmentState extends State<RescheduleAppointment> {
                       DatePicker(
                         DateTime.now(),
                         height: 100,
-                        deactivatedColor: Colors.grey.shade400,
+                        deactivatedColor: Color(0xffE1E8ED),
                         daysCount: numberOfDays,
                         activeDates: getNextTwoWeeks(widget
                                 .doctor.doctorSchedule

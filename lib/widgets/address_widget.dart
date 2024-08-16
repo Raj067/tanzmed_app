@@ -25,7 +25,7 @@ class AddressWidget extends StatelessWidget {
           return Text(
             "noAddress",
             style: const TextStyle(
-              color: Colors.grey,
+              color: Color(0xffE1E8ED),
               fontSize: 12,
             ),
           );
@@ -33,7 +33,7 @@ class AddressWidget extends StatelessWidget {
           return Text(
             "loading",
             style: const TextStyle(
-              color: Colors.grey,
+              color: Color(0xffE1E8ED),
               fontSize: 12,
             ),
           );
@@ -41,7 +41,7 @@ class AddressWidget extends StatelessWidget {
           return Text(
             '${snapshot.data}',
             style: const TextStyle(
-              color: Colors.grey,
+              color: Color(0xffE1E8ED),
               fontSize: 12,
             ),
             maxLines: 1,
