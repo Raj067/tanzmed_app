@@ -39,6 +39,12 @@ dependencies:
   get_storage: ^2.1.1
   syncfusion_flutter_gauges: ^26.2.9
   bootstrap_icons: ^1.11.3
+  rate: ^0.0.2
+  geocoding: ^3.0.0
+  geolocator: ^13.0.1
+  google_maps_flutter: ^2.9.0
+  intl: ^0.19.0
+  date_picker_timeline: ^1.2.6
 
 dev_dependencies:
   flutter_test:
@@ -63,8 +69,418 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    # - assets/images/
+    - assets/social-icons/
+    - assets/images/hero.png
+    - assets/images/amina.png
+    - assets/images/face.jpeg
+    - assets/images/face2.png
+    - assets/images/bathroom-scale.png
+    - assets/images/sample.jpg
+    - assets/images/mentral-tracker.png
+    - assets/images/mtoto-health.png
+    - assets/images/preginant-health.png
+    - assets/images/madicine-intake.png
+    - assets/images/doctor.png
+    - assets/images/cancer.png
+    - assets/images/hospital-building.png
+    - assets/images/embryo.png
+    - assets/images/fertilization.png
+    - assets/images/medical-card.png
+    - assets/images/pregnant.png
+    - assets/images/pregnant1.png
+    - assets/images/anti-age.png
+    - assets/images/height.png
+    - assets/images/scale.png
+    - assets/images/jubilee_insurance.jpg
+    - assets/images/nhif.jpg
+    - assets/images/sanlam.jpg
+    - assets/images/ARV.png
+    - assets/images/ct-scanx3sss.png
+    - assets/images/dermatology2.png
+    - assets/images/ENsT.png
+    - assets/images/family.png
+    - assets/images/published.png
+    - assets/images/edited.png
+    - assets/images/girl.png
+    - assets/images/gynacolo.png
+    - assets/images/moyeo.png
+    - assets/images/neuroseurgery.png
+    - assets/images/orthopedic.png
+    - assets/images/pediatrics.png
+    - assets/images/physinjury.png
+    - assets/images/stomach.png
+    - assets/images/testing.png
+    - assets/images/urology.png
+    - assets/images/wsacary.png
+    - assets/images/blood.png
+    - assets/images/maduka.png
+    - assets/images/medicine-briefcase.png
+    - assets/images/medicines.png
+    - assets/images/microscope.png
+    - assets/images/stethoscope.png
+    - assets/images/stethoscope1.png
+    - assets/images/stethoscope2.png
+    - assets/images/vituo_afya.png
+    - assets/images/zahanati.png
+    - assets/images/open-book.png
+    - assets/images/speech-bubble.png
+    - assets/images/budget.png
+    - assets/images/medicine1.png
+    - assets/images/medicine.png
+    - assets/images/health-report.png
+    - assets/images/information.png
+    - assets/images/summary.png
+    - assets/images/vaccines.png
+    - assets/images/swing.png
+    - assets/images/corporate.png
+    - assets/images/insurance.png
+    - assets/images/workers.png
+    - assets/images/mobile-shopping.png
+    - assets/images/telemedicine.png
+    - assets/images/Specialized-clinic.png
+    - assets/images/hospital2.png
+    - assets/images/Appointment-calendar.png
+    - assets/images/lab-test-active.png
+    - assets/images/lab-test-inactive.png
+    - assets/images/group.png
+    - assets/toto/age1.png
+    - assets/toto/baby-clinic1.png
+    - assets/toto/baby-growth1.png
+    - assets/toto/child-summary1.png
+    - assets/toto/height1.png
+    - assets/toto/tips1.png
+    - assets/toto/vaccination1.png
+    - assets/toto/weight1.png
+    - assets/toto/when-to-act1.png
+    - assets/toto/Call-Doctor.png
+    - assets/toto/Chat-with-Amina.png
+    - assets/toto/chat-with-doctor.png
+    - assets/images/laugh.png
+    - assets/images/allergy.png
+    - assets/images/ct-scan.png
+    - assets/images/diseases.png
+    - assets/images/hospital_visit.png
+    - assets/images/lab_test.png
+    - assets/images/medicine_record.png
+    - assets/images/calculator.png
+    - assets/images/dartboard.png
+    - assets/images/right-arrow.png
+    - assets/images/running1.png
+    - assets/images/running2.png
+    - assets/images/start.png
+    - assets/images/walk.png
+    - assets/images/enterprise.png
+    - assets/images/calendar.png
+    - assets/images/laboratory.png
+    - assets/images/Specialized-clinic.png
+    - assets/images/pharmacy.png
+    - assets/images/Endocrinology.png
+    - assets/images/HIV-Aids.png
+    - assets/images/Internal_Medicine.png
+    - assets/images/Mental_Health.png
+    - assets/images/Oncology.png
+    - assets/images/Ophthalmology.png
+    - assets/images/Physiotherapy.png
+    - assets/images/Urology_Mfumo_wa_mkojo.png
+    - assets/logo/icon-tanzmed.png
+    - assets/elimika.png
+    - assets/hospital.png
+    - assets/tabia-test.png
+    # - assets/logo/tanzmed-splash.png
+    - assets/logo/splash.png
+    - assets/logo/tz.png
+    - assets/logo/usa.png
+    - assets/icon/calendar.png
+    - assets/icon/home-icon-silhouette.png
+    - assets/icon/information-button.png
+    - assets/icon/insurance.png
+    - assets/icon/lab-test-active.png
+    - assets/icon/lab-test-Inactive.png
+    - assets/icon/live-chat.png
+    - assets/icon/logout.png
+    - assets/icon/medical-record.png
+    - assets/icon/privacy-policy.png
+    - assets/icon/settings.png
+    - assets/icon/shopping-bag1.png
+    - assets/icon/terms-and-conditions.png
+    - assets/icon/test-results1.png
+    - assets/icon/user.png
+    - assets/icon/calendar-active.png
+    - assets/icon/calendar-inactive.png
+    - assets/icon/shopping-cart-active.png
+    - assets/icon/shopping-cart-inactive.png
+    - assets/icon/pregnancy-test.png
+    - assets/images/female-home.png
+    - assets/images/idea-home.png
+    - assets/images/red-ribbon-home.png
+    - assets/images/makala-zaidi_home.png
+    - assets/images/orodha_home.png
+    - assets/images/toto_clinic.png
+    - assets/images/Ujauzito_home.png
+    - assets/images/ushauri_home.png
+    - assets/images/Lab-Test.png
+    - assets/images/lab-active.png
+    - assets/images/lab-inactive.png
+    - assets/images/high-heels.png
+    - assets/images/pregnancy-test-blue.png
+    - assets/images/vagina-discharge.png
+    - assets/images/blood-blue.png
+    - assets/images/drugstore-blue.png
+    - assets/images/hospital.png
+    - assets/images/maduka-blue.png
+    - assets/images/microscope-blue.png
+    - assets/images/stethoscope-blue.png
+    - assets/images/vituo-blue.png
+    - assets/images/health-center.png
+    - assets/images/dispensary.png
+    - assets/images/calendar_hedhi.png
+    - assets/images/edit_hedhi.png
+    - assets/images/unhappy_hedhi.png
+    - assets/images/alert-ujauzito.png
+    - assets/images/doctor1-ujauzito.png
+    - assets/images/lab-test-white-ujauzito.png
+    - assets/images/pregnancy-test-white-ujauzito.png
+    - assets/images/Gauge-meter.png
+    - assets/images/reputation-3d-icon-png.png
+    - assets/images/BMI-Background.png
+    - assets/images/BMI-Background-en.png
+    - assets/images/HIV-results-background.png
+    - assets/images/HIV-results-background-EN.png
+    - assets/images/Marker.png
+    - assets/images/pregnant-result-gauge-en.png
+    - assets/images/wanawake-Marker.png
+    - assets/images/Fertility-control.png
+    - assets/images/ovulation.png
+    - assets/images/Pregnancy.png
+    - assets/images/Upcoming_tracking.png
+    - assets/images/bmi.png
+    - assets/images/bmi1.png
+    - assets/images/left-arrow.png
+    - assets/images/Password-Invisible.png
+    - assets/images/Password-Visible.png
+    - assets/images/user.png
+    - assets/images/Onboard 1.png
+    - assets/images/Onboard 2.png
+    - assets/images/Onboard 3.png
+    # - assets/images/onboard1.png
+    # - assets/images/onboard2-sw.png
+    # - assets/images/onboard3.png
+    # - assets/images/onboard3-sw.png
+    # - assets/images/onboard-sw.png
+    - assets/images/market_baby.png
+    - assets/images/market_cosmetic.png
+    - assets/images/market_medicine.png
+    - assets/images/market_painkiller.png
+    - assets/images/rate-us.png
+    - assets/icon/share.png
+    - assets/icon/share-icon.png
+    # - assets/images/physician.png
+    # - assets/images/physician.jpg
+    - assets/images/lab.png
+    - assets/icon/booking-detail.png
+    - assets/icon/stool-test.png
+    - assets/icon/simple-allergy-test.png
+    - assets/icon/search-home.png
+    - assets/icon/location.png
+    - assets/icon/my-orders.png
+    - assets/icon/shopping-cart.png
+    - assets/icon/Terrible.png
+    - assets/icon/Okay.png
+    - assets/icon/Bad.png
+    - assets/icon/Good.png
+    - assets/icon/Great.png
+    - assets/icon/pregnancy1.png
+    - assets/icon/vitamin.png
+    - assets/icon/child-wellness.png
+    - assets/icon/hormonal.png
+    - assets/icon/bones.png
+    - assets/icon/liver.png
+    - assets/icon/diabeties.png
+    - assets/icon/kidneys.png
+    - assets/icon/lungs.png
+    - assets/icon/cardiac.png
+    - assets/icon/thyroid.png
+    - assets/icon/std-testing.png
+    - assets/icon/pregnancy.png
+    - assets/icon/urinalysis.png
+    - assets/icon/blood-test.png
+    - assets/icon/very-bad.png
+    - assets/icon/Bad.png
+    - assets/icon/viber.png
+    - assets/icon/moderate.png
+    - assets/icon/happy.png
+    - assets/icon/current-location.png
+    # - assets/images/location.gif
+    # - assets/images/location1.gif
+    # - assets/images/location2.gif
+    - assets/images/money.png
+    # - assets/images/1554401.png
+    - assets/images/3258446.png
+    - assets/images/design1-01-01-07.png
+    - assets/images/favorite.png
+    - assets/images/cash-on-delivery.png
+    - assets/images/Payment-method.png
+    - assets/images/wallet.png
+    - assets/icon/right-arrow.png
+    - assets/icon/stethoscope.png
+    - assets/icon/notes.png
+    - assets/icon/target.png
+    - assets/icon/happy.png
+    - assets/icon/patient.png
+    - assets/icon/zoom.png
+    - assets/icon/chat.png
+    - assets/icon/advanced.png
+    - assets/icon/shield.png
+    - assets/images/advanced.png
+    - assets/images/chat.png
+    - assets/images/shield.png
+    - assets/images/tanzania.png
+    - assets/images/usa.png
+    - assets/images/zoom.png
+    - assets/icon/vaccination.png
+    - assets/ca/
+    - assets/icon/linkedin.png
+    - assets/icon/x.png
+    - assets/icon/whatsapp.png
+    - assets/icon/alert.png
+    - assets/icon/evaluation.png
+    - assets/icon/salad.png
+    - assets/icon/checked.png
+    - assets/icon/chat_blue.png
+    - assets/icon/filter.png
+    - assets/icon/sad_face.png
+    - assets/icon/Chat1.png
+    - assets/icon/Call.png
+    - assets/icon/Video Call.png
+    - assets/icon/foreveryone.png
+    - assets/icon/On site.png
+    - assets/images/doctors-background.jpg
+    - assets/images/clipboard.png
+    - assets/home/baby-carriage.png
+    # - assets/home/bmi.png
+    - assets/home/facility.png
+    - assets/home/Ujauzito.png
+    - assets/home/ushauri.png
+    - assets/home/vagina-discharge.png
+    - assets/images/coming-soon.png
+    - assets/images/nutrition.png
+    - assets/icon/correct.png
+    - assets/icon/filter_grey.png
+    - assets/icon/problem.png
+    - assets/icon/target_grey.png
+    - assets/icon/grid.png
+    - assets/icon/edit.png
+    - assets/icon/couple.png
+    - assets/home/nutrition2.png
+    - assets/home/sample-tube.png
+    - assets/profile/check.png
+    - assets/profile/coins.png
+    - assets/profile/colors-bck.png
+    - assets/profile/delete.png
+    - assets/profile/health-insurance.png
+    - assets/profile/information.png
+    - assets/profile/medical-records.png
+    - assets/profile/pin.png
+    - assets/profile/premium-badge.png
+    - assets/profile/subscribe-top-icon.png
+    - assets/profile/wallet.png
+    - assets/profile/user-profile.png
+    - assets/profile/user-profile-inactive.png
+    - assets/profile/coins-white.png
+    - assets/profile/tigopesa.jpeg
+    # - assets/payments/CRDB-Bank.png
+    - assets/payments/jubilee.png
+    # - assets/payments/nivushe.png
+    # - assets/payments/payment-available.png
+    # - assets/payments/selcom.png
+    # - assets/payments/tigo.png
+    - assets/payments/wallet2.png
+    - assets/payments/airtel-money.png
+    - assets/payments/crdb-icon.png
+    - assets/payments/Mpesa.png
+    - assets/payments/tigo.png
+    - assets/home/profile-user.png
+    - assets/icon/filter_blue.png
+    - assets/images/video-conference.png
+    - assets/icon/miadi-appointment-main-topright.png
+    - assets/icon/miadi-white.png
+    # - assets/ic_chat.svg
+    # - assets/ic_end.svg
+    # - assets/ic_hand.svg
+    # - assets/ic_leave.svg
+    # - assets/ic_loading_hls.svg
+    # - assets/ic_participants.svg
+    # - assets/ic_screen_share.svg
+    # - assets/ic_stop.svg
+    # - assets/ic_video.svg
+    # - assets/ic_video_off.svg
+    # - assets/logo.png
+    # - assets/videosdk_text.png
+    - assets/video/chat.png
+    - assets/video/close.png
+    - assets/video/hour-glass.png
+    - assets/video/mic.png
+    - assets/video/mute.png
+    - assets/video/no-video.png
+    - assets/video/video-camera.png
+    - assets/chat-background.jpg
+    - assets/chat-alert.png
+    - assets/alert-no.png
+    - assets/blocked.png
+    - assets/patient.png
     - assets/icon/TanzmedIcon.gif
-    # - images/a_dot_ham.jpeg
+    - assets/questions-default-image.png
+    - assets/home/open-book.png
+    - assets/home/stethoscope.png
+    - assets/contact/Call.png
+    - assets/contact/contact-background.png
+    - assets/contact/contact-tanzmed.png
+    - assets/contact/email.png
+    - assets/contact/madawa_active.png
+    - assets/contact/madawa_inactive.png
+    - assets/contact/whatsapp1.png
+    - assets/contact/planning.png
+    - assets/contact/ushauri-mental.png
+    - assets/images/diabetes-test.png
+    - assets/home/hospital.png
+    - assets/images/ujauzito.png
+    - assets/pregnancy/edd.png
+    - assets/pregnancy/medical-assistance.png
+    - assets/pregnancy/mothers-day.png
+    - assets/pregnancy/newborn.png
+    - assets/pregnancy/pregnancy.png
+    - assets/images/ujauzito-menstrual.png
+    - assets/pregnancy/no-clinic.png
+    - assets/pregnancy/Daktari-pink.png
+    - assets/pregnancy/calendar_pink.png
+    - assets/pregnancy/hospital-pink.png
+    - assets/pregnancy/father_name.png
+    - assets/pregnancy/father-connected.png
+    - assets/pregnancy/calendar_blue.png
+    - assets/pregnancy/female-male.png
+    # - assets/payments/airtelMoney.png
+    - assets/pregnancy/hospital.png
+    - assets/pregnancy/test.png
+    - assets/pregnancy/Vacination.png
+    - assets/pregnancy/vacination-colored.png
+    - assets/pregnancy/info.png
+    - assets/pregnancy/female-and-male-shapes-silhouettes.png
+    - assets/pregnancy/filter.png
+    - assets/pregnancy/service-medicine.png
+    - assets/pregnancy/services-kipimo.png
+    - assets/pregnancy/switch.png
+    - assets/pregnancy/sort-default-upcoming-1-2-3-then-old-1-2-3.png
+    - assets/pregnancy/sort-taken-then-missed-then-upcoming.png
+    - assets/pregnancy/sort-by-week-1-2-3.png
+    - assets/payments/crdb.png
+    - assets/payments/crdb-image.png
+    - assets/home-visit.png
+    - assets/nursing.png
+    - assets/ocupational-therapy.png
+    - assets/microphone.png
+    - assets/nutrition.png
+    - assets/professional.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

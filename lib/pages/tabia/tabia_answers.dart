@@ -5,8 +5,10 @@ import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:syncfusion_flutter_gauges/gauges.dart';
 import 'package:tanzmed/helpers/settings.dart';
+import 'package:tanzmed/pages/jifunze_zaidi.dart';
 import 'package:tanzmed/pages/risk_assessment.dart';
 
+import '../ctc_centers.dart';
 import 'custom_risk_factor_gauge.dart';
 
 class TabiaAnswersPage extends StatefulWidget {
@@ -154,35 +156,33 @@ class _TabiaAnswersPageState extends State<TabiaAnswersPage> {
           ),
           const SizedBox(height: 10),
           Text(getResultText(widget.totalContribution)),
-          // const SizedBox(height: 5),
-          // const Text(
-          //   "Pia tunakushauri utembelee kituo cha kutolea huduma za afya kwa ajili ya upimaji wa virusi vya UKIMWI ili kutambua hali yako",
-          // ),
           const SizedBox(height: 10),
-          const Padding(
-            padding: EdgeInsets.only(top: 5, bottom: 5),
+          Padding(
+            padding: const EdgeInsets.only(top: 5, bottom: 5),
             child: Row(
               children: [
-                // singleApp(
-                //     title: "Pata Ushauri \nNasaha",
-                //     icon: "assets/icon/patient.png",
-                //     color: Colors.purple,
-                //     page: ChatOptions(
-                //       fromMentalHealth: 2,
-                //     ),
-                //     isUshauri: true),
-                // singleApp(
-                //     title: "Kapime au \nPata Zana",
-                //     icon: "assets/hospital.png",
-                //     color: primaryColor,
-                //     page: const VituoVyaCTC(),
-                //     isUshauri: false),
-                // singleApp(
-                //     title: "Jifunze \nzaidi",
-                //     icon: "assets/elimika.png",
-                //     color: ushauriColor,
-                //     page: const ElimikaPage(),
-                //     isUshauri: false),
+                singleApp(
+                    title: "Pata Ushauri \nNasaha",
+                    icon: "assets/icon/patient.png",
+                    color: Colors.purple,
+                    action: () {},
+                    isUshauri: true),
+                singleApp(
+                    title: "Kapime au \nPata Zana",
+                    icon: "assets/hospital.png",
+                    color: AppSettings.primaryColor,
+                    action: () {
+                      Get.to(const CTCCenters());
+                    },
+                    isUshauri: false),
+                singleApp(
+                    title: "Jifunze \nzaidi",
+                    icon: "assets/elimika.png",
+                    color: AppSettings.ushauriColor,
+                    action: () {
+                      Get.to(const JifunzeZaidi());
+                    },
+                    isUshauri: false),
               ],
             ),
           ),
@@ -195,25 +195,12 @@ class _TabiaAnswersPageState extends State<TabiaAnswersPage> {
     required String title,
     required String icon,
     required var color,
-    required Widget page,
+    required Function() action,
     required bool isUshauri,
   }) {
     return Expanded(
       child: GestureDetector(
-        onTap: () {
-          // if (box.read("access_token") == null) {
-          //   Get.to(const LoginPage());
-          // } else {
-          //   isUshauri == true
-          //       ? showDialog(
-          //           context: context,
-          //           builder: (BuildContext context) {
-          //             return chatWithDoctorFunction(context, 2);
-          //           },
-          //         )
-          //       : Get.to(page);
-          // }
-        },
+        onTap: action,
         child: Container(
           height: 100,
           width: 60,
